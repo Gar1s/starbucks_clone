@@ -29,6 +29,7 @@ public class User {
     @Column
     private Integer password;
 
+    //TODO ask about relationships @OneToMany, @ManyToMany
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_order_id", referencedColumnName = "userId")
     private List<Order> order;

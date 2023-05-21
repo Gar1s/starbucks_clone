@@ -1,6 +1,6 @@
 package com.example.starbucks.services;
 
-import com.example.starbucks.Dto.UserDTO;
+import com.example.starbucks.dto.UserDTO;
 import com.example.starbucks.entity.User;
 import com.example.starbucks.repositories.UserRepos;
 import org.springframework.beans.factory.annotation.Autowired;
