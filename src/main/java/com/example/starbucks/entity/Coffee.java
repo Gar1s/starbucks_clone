@@ -31,5 +31,5 @@ public class Coffee {
     @JoinTable(name = "coffee_orders", 
                joinColumns = @JoinColumn(name = "coffee_id"),
                inverseJoinColumns = @JoinColumn(name = "order_id"))
-    private Set<Coffee> coffees;
+    private Set<Order> orders;
 }
