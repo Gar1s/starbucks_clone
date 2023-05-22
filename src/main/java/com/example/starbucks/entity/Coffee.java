@@ -26,4 +26,10 @@ public class Coffee {
     private RoastingLevel roastingLevel;
     @Column
     private Double price;
+    
+    @ManyToMany
+    @JoinTable(name = "coffee_orders", 
+               joinColumns = @JoinColumn(name = "coffee_id"),
+               inverseJoinColumns = @JoinColumn(name = "order_id"))
+    private Set<Coffee> coffees;
 }
