@@ -20,4 +20,7 @@ public class Order {
     private Double price;
     @Column
     private String date;
+    
+    @ManyToMany(mappedBy = "orders")
+    private Set<Coffee> coffees;
 }
